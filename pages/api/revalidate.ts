@@ -14,6 +14,7 @@ export default async function handler(
 
   try{
     //regenerate index route 
+    //updating 
     await res.revalidate('/')
     return res.json({revalidated: true})
   } catch (err){
